@@ -15,13 +15,24 @@ public class MainDemoApp {
         AccountDAO theAccountDAO = context.getBean("accountDAO", AccountDAO.class);
         MembershipDAO membershipDAO = context.getBean("membershipDAO", MembershipDAO.class);
 
+        Account account = new Account();
+        account.setLevel("medium");
+        account.setName("Bob");
+
         // call the business method
-        theAccountDAO.addAccount(new Account());
+        theAccountDAO.addAccount(account);
         theAccountDAO.goToSleep();
 
         membershipDAO.addMember();
         membershipDAO.doWork();
 
+        // call the accountdao getter/setter methods
+        theAccountDAO.setName("John");
+        theAccountDAO.setServiceCode("silver");
+
+        theAccountDAO.getName();
+        theAccountDAO.getServiceCode();
+        
         // close the context
         context.close();
     }
