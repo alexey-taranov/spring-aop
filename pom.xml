@@ -25,6 +25,9 @@
         <module>spring-aop-pointcut-declarations</module>
         <module>spring-aop-pointcut-order-aspects</module>
         <module>spring-aop-read-joinpoint</module>
+        <module>spring-aop-z-after-returning</module>
+        <module>spring-aop-z-after-throwing</module>
+        <module>spring-aop-z-after-finally</module>
     </modules>
 
     <dependencies>
