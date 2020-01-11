@@ -28,6 +28,7 @@
         <module>spring-aop-z-after-returning</module>
         <module>spring-aop-z-after-throwing</module>
         <module>spring-aop-z-after-finally</module>
+        <module>spring-aop-z-around</module>
     </modules>
 
     <dependencies>
